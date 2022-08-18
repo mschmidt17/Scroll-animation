@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://argentinaphotoworkshops.com/wp-content/uploads/2022/07/patagonia-chalten-argentina.jpg");
+  overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-attachment: fixed;
+  background-color: blur(5px);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0;
+  background-color: rgba(85, 82, 82, 0.26);
+}
+
+.arrow{
+  font-size: 3rem;
+  
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: rgba(85, 82, 82, 0.26);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
